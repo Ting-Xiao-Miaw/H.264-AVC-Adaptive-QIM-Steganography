@@ -81,8 +81,6 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 
 ### 📘 Implementation Details
 
-### 📘 Implementation Details
-
 This study implements the proposed information hiding method on top of the H.264 reference software JM (Joint Model), with additional embedding and extraction modules integrated into the encoding and decoding processes, respectively. The experimental environment is detailed in Enviroment Table.
 
 For encoder configuration, we enable **CAVLC** as the entropy coding mode. The **GOP (Group of Pictures)** size is set to 15 with a structure of `IBBBBBBBPBBBBBB`.
