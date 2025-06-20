@@ -21,14 +21,63 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 
 ### 🖼️ Visual Comparison on Frame #0006
 
-**Original / Baseline**
-![Original](images/frame_0006.png)
+<h2>🖼️ Visual and Quantitative Comparison on Frame #0006</h2>
 
-**Method M**
-![Method M](images/frame_0006M.png)
+<h3>📷 Visual Comparison</h3>
+<table>
+  <tr>
+    <th>Original</th>
+    <th>Proposed Method</th>
+  </tr>
+  <tr>
+    <td><img src="images/frame_0006.png" width="300"/></td>
+    <td><img src="images/frame_0006P.png" width="300"/></td>
+  </tr>
+  <tr>
+    <th>Ma [10]</th>
+    <th>Lin [4]</th>
+  </tr>
+  <tr>
+    <td><img src="images/frame_0006M.png" width="300"/></td>
+    <td><img src="images/frame_0006L.png" width="300"/></td>
+  </tr>
+</table>
 
-**Method L**
-![Method L](images/frame_0006L.png)
+<h3>📊 Quantitative Results</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Hiding Capacity (bits)</th>
+      <th>Bitrate Increase (%)</th>
+      <th>PSNR (dB)</th>
+      <th>SSIM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ma [10]</td>
+      <td>1049.35</td>
+      <td>3.24</td>
+      <td>43.74</td>
+      <td>0.9950</td>
+    </tr>
+    <tr>
+      <td>Lin [4]</td>
+      <td>1966.20</td>
+      <td>7.17</td>
+      <td>39.95</td>
+      <td>0.9854</td>
+    </tr>
+    <tr>
+      <td><strong>Proposed</strong></td>
+      <td><strong>3584.00</strong></td>
+      <td><strong>9.90</strong></td>
+      <td><strong>39.56</strong></td>
+      <td><strong>0.9816</strong></td>
+    </tr>
+  </tbody>
+</table>
 
-**Proposed Method**
-![Proposed](images/frame_0006P.png)
+<p><strong>Observation:</strong> Although our method shows a slightly lower PSNR/SSIM compared to Ma [10], it achieves <strong>3.4× more hiding capacity</strong> with a moderate bitrate increase, demonstrating a better trade-off between robustness, capacity, and visual quality in the compressed domain.</p>
+
