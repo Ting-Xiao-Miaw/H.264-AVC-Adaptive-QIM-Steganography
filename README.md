@@ -18,3 +18,17 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 - 👁️‍🗨️ **High Visual Fidelity under Heavy Embedding**: Maintains good PSNR and SSIM even under high embedding rates.
 - 📦 **Compression-Aware Design**: Embedding is performed directly in the quantized transform domain (QDCT), preserving bitrate efficiency.
 - 📈 **Scalable and Robust**: Performance remains linear and stable across different QPs, indicating strong adaptability to encoding parameters.
+
+### 🖼️ Visual Comparison on Frame #0006
+
+**Original / Baseline**
+![Original](images/frame_0006.png)
+
+**Method M**
+![Method M](images/frame_0006M.png)
+
+**Method L**
+![Method L](images/frame_0006L.png)
+
+**Proposed Method**
+![Proposed](images/frame_0006P.png)
