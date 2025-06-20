@@ -15,6 +15,6 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 ## ✨ Key Features
 
 - 🔢 **High Hiding Capacity**: Achieves an average **78.97% improvement** over existing methods.
-- 👁️‍🗨️ **Stable Visual Quality**: Maintains consistent PSNR/SSIM under various QP values.
+- 👁️‍🗨️ **High Visual Fidelity under Heavy Embedding**: Maintains good PSNR and SSIM even under high embedding rates.
 - 📦 **Compression-Aware Design**: Embedding is performed directly in the quantized transform domain (QDCT), preserving bitrate efficiency.
 - 📈 **Scalable and Robust**: Performance remains linear and stable across different QPs, indicating strong adaptability to encoding parameters.
