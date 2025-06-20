@@ -81,7 +81,7 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 
 ### 📘 Implementation Details
 
-This study implements the proposed information hiding method on top of the H.264 reference software JM (Joint Model), with additional embedding and extraction modules integrated into the encoding and decoding processes, respectively. The experimental environment is detailed in Enviroment Table.
+This study implements the proposed information hiding method on top of the H.264 reference software **[JM (Joint Model)](https://iphome.hhi.de/suehring/tml/)**, with additional embedding and extraction modules integrated into the encoding and decoding processes, respectively. The experimental environment is detailed in Enviroment Table.
 
 For encoder configuration, we enable **CAVLC** as the entropy coding mode. The **GOP (Group of Pictures)** size is set to 15 with a structure of `IBBBBBBBPBBBBBB`.
 
@@ -100,3 +100,9 @@ For our experiments, we primarily select videos in **CIF resolution (352×288)**
 | Compiler             | MSVC                             |
 | Reference Software    | JM 19.0 (H.264 Reference Encoder)|
 | Programming Language  | C / C++                          |
+
+---
+
+### 🔍 Comparison with Existing Methods
+
+This study compares the proposed method against existing approaches by [Ma et al.](https://ieeexplore.ieee.org/document/5559388) and [Lin et al.](https://www.sciencedirect.com/science/article/pii/S0164121212003020) The experiments primarily analyze four key metrics: **hiding capacity**, **bitrate increase**, **PSNR**, and **SSIM**, conducted under a fixed quantization parameter (**QP = 28**).
