@@ -85,7 +85,7 @@ This study implements the proposed information hiding method on top of the H.264
 
 For encoder configuration, we enable **CAVLC** as the entropy coding mode. The **GOP (Group of Pictures)** size is set to 15 with a structure of `IBBBBBBBPBBBBBB`.
 
-In our implementation, we utilize publicly available video sequences from the **Xiph.org Video Test Media** dataset.
+In our implementation, we utilize publicly available video sequences from the **[Xiph.org Video Test Media](https://media.xiph.org/video/derf/)** dataset.
 
 For our experiments, we primarily select videos in **CIF resolution (352×288)**, with a frame rate of **30 fps** and **4:2:0 chroma subsampling**.
 
