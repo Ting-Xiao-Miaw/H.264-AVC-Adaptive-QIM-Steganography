@@ -19,8 +19,6 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 - 📦 **Compression-Aware Design**: Embedding is performed directly in the quantized transform domain (QDCT), preserving bitrate efficiency.
 - 📈 **Scalable and Robust**: Performance remains linear and stable across different QPs, indicating strong adaptability to encoding parameters.
 
-### 🖼️ Visual Comparison on Frame #0006
-
 <h2>🖼️ Visual and Quantitative Comparison on Frame #0006</h2>
 
 <h3>📷 Visual Comparison</h3>
@@ -34,8 +32,8 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
     <td><img src="images/frame_0006P.png" width="300"/></td>
   </tr>
   <tr>
-    <th>Ma [10]</th>
-    <th>Lin [4]</th>
+    <th>Ma</th>
+    <th>Lin</th>
   </tr>
   <tr>
     <td><img src="images/frame_0006M.png" width="300"/></td>
@@ -48,7 +46,7 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
   <thead>
     <tr>
       <th>Method</th>
-      <th>Hiding Capacity (bits)</th>
+      <th>Hiding Capacity (bits/I-frame)</th>
       <th>Bitrate Increase (%)</th>
       <th>PSNR (dB)</th>
       <th>SSIM</th>
@@ -56,14 +54,14 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
   </thead>
   <tbody>
     <tr>
-      <td>Ma [10]</td>
+      <td>Ma</td>
       <td>1049.35</td>
       <td>3.24</td>
       <td>43.74</td>
       <td>0.9950</td>
     </tr>
     <tr>
-      <td>Lin [4]</td>
+      <td>Lin</td>
       <td>1966.20</td>
       <td>7.17</td>
       <td>39.95</td>
@@ -79,5 +77,5 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
   </tbody>
 </table>
 
-<p><strong>Observation:</strong> Although our method shows a slightly lower PSNR/SSIM compared to Ma [10], it achieves <strong>3.4× more hiding capacity</strong> with a moderate bitrate increase, demonstrating a better trade-off between robustness, capacity, and visual quality in the compressed domain.</p>
+<p><strong>Observation:</strong> Although our method shows a slightly lower PSNR/SSIM compared to Lin, it achieves <strong>1.79× more hiding capacity</strong> with a moderate bitrate increase, demonstrating a better trade-off between robustness, capacity, and visual quality in the compressed domain.</p>
 
