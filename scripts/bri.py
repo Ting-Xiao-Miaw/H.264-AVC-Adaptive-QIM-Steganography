@@ -63,7 +63,6 @@ def bitrate_comparison():
                     f.write(header + "\n")
                     f.write("-" * 75 + "\n")
                     f.write(result + "\n")
-                exit(-1)
 
 
 if __name__ == "__main__":
