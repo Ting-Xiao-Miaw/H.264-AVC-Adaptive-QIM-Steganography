@@ -79,3 +79,26 @@ The original 4-bit message is first transformed into a **syndrome**, which is em
 
 <p><strong>Observation:</strong> Although our method shows a slightly lower PSNR/SSIM compared to Lin, it achieves <strong>1.79× more hiding capacity</strong> with a moderate bitrate increase, demonstrating a better trade-off between robustness, capacity, and visual quality in the compressed domain.</p>
 
+### 📘 Implementation Details
+
+### 📘 Implementation Details
+
+This study implements the proposed information hiding method on top of the H.264 reference software JM (Joint Model), with additional embedding and extraction modules integrated into the encoding and decoding processes, respectively. The experimental environment is detailed in Enviroment Table.
+
+For encoder configuration, we enable **CAVLC** as the entropy coding mode. The **GOP (Group of Pictures)** size is set to 15 with a structure of `IBBBBBBBPBBBBBB`.
+
+In our implementation, we utilize publicly available video sequences from the **Xiph.org Video Test Media** dataset.
+
+For our experiments, we primarily select videos in **CIF resolution (352×288)**, with a frame rate of **30 fps** and **4:2:0 chroma subsampling**.
+
+---
+
+### Enviroment Table: Experimental Environment Specifications
+
+| Item                 | Specification                      |
+|----------------------|----------------------------------|
+| Operating System      | Windows 10 64-bit                 |
+| Development Platform  | Microsoft Visual Studio 2019     |
+| Compiler             | MSVC                             |
+| Reference Software    | JM 19.0 (H.264 Reference Encoder)|
+| Programming Language  | C / C++                          |
