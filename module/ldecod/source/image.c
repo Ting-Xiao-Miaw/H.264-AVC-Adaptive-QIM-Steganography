@@ -980,7 +980,7 @@ int decode_one_frame(DecoderParams *pDecoder)
       write_mode_info(p_Vid, frame_id);
       write_mapping_info(p_Vid, frame_id);
       if (embedding_method != -1)
-        restore_message(p_Vid, frame_id);
+        classify_restore(p_Vid, frame_id);
       frame_id++;
   }
   free_qdct_nonzero_flag(p_Vid);    // free qdct flag
