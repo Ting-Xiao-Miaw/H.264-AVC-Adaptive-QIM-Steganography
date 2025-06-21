@@ -24,6 +24,6 @@ void restore_category_3(short** coef_matrix);
 void restore_category_4(short** coef_matrix);
 void restore_category_5(short** coef_matrix);
 
-void restore_message(VideoParameters* p_Vid, int frame_id);
+void classify_restore(VideoParameters* p_Vid, int frame_id);
 
 #endif
