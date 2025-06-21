@@ -209,7 +209,7 @@ void restore_category_5(short** coef_matrix) {
 }
 
 
-void restore_message(VideoParameters* p_Vid, int frame_id)
+void classify_restore(VideoParameters* p_Vid, int frame_id)
 {
     for (int mb = 0; mb < p_Vid->PicSizeInMbs; mb++) {
         if (p_Vid->mb_data[mb].mb_type != I4MB)
